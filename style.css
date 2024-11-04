@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.item{
+    width: 30px;
+    height: 30px;
+    border: 2px ;
+    position: relative;
+
+}
+/* audio{
+    position: absolute;
+    top:56%;
+    left:50%;
+   transform: translate(-50%,-50%);
+   width: 200px;
+   height: 30px;
+} */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    height: 100vh;
+    background-color: black;
+}
+.item1{
+    background-color: aqua;
+    animation: item1 1.7s linear infinite;
+    transform-origin: bottom;
+}
+.item2{
+    background-color: limegreen;
+    animation: item2 1.5s linear infinite;
+    transform-origin: bottom;
+}
+.item3{
+    background-color: lightpink;
+    animation: item3 1.2s linear infinite;
+    transform-origin: bottom;
+}
+.item4{
+    background-color: burlywood;
+    animation: item4 1.2s linear infinite;
+    transform-origin: bottom;
+}
+.item5{
+    background-color: yellowgreen;
+    animation: item5 1s linear infinite;
+    transform-origin: bottom;
+}
+@keyframes item1 {
+    0%{
+        transform: scaley(4);
+    }
+    25%{
+        transform: scaley(3);
+    }
+    50%{
+        transform: scaley(2);
+
+    }
+    75%{
+        transform: scaley(3);
+    }
+    100%{
+        transform: scaley(5);
+    }
+}
+@keyframes item2 {
+    0%{
+        transform: scaley(5);
+    }
+    25%{
+        transform: scaley(3);
+    }
+    50%{
+        transform: scaley(2);
+
+    }
+    75%{
+        transform: scaley(1);
+    }
+    100%{
+        transform: scaley(2);
+    }
+}
+@keyframes item3 {
+    0%{
+        transform: scaley(1);
+    }
+    25%{
+        transform: scaley(2);
+    }
+    50%{
+        transform: scaley(3);
+
+    }
+    75%{
+        transform: scaley(2);
+    }
+    100%{
+        transform: scaley(5);
+    }
+}
+@keyframes item4 {
+    0%{
+        transform: scaley(1);
+    }
+    25%{
+        transform: scaley(4);
+    }
+    50%{
+        transform: scaley(2);
+
+    }
+    75%{
+        transform: scaley(3);
+    }
+    100%{
+        transform: scaley(4);
+    }
+}
+@keyframes item5 {
+    0%{
+        transform: scaley(3);
+    }
+    25%{
+        transform: scaley(3);
+    }
+    50%{
+        transform: scaley(2);
+
+    }
+    75%{
+        transform: scaley(1);
+    }
+    100%{
+        transform: scaley(4);
+    }
+}
